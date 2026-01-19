@@ -3,7 +3,10 @@ import os
 from supabase import create_client, Client
 import pandas as pd
 import itertools
+from dotenv import load_dotenv
 
+
+load_dotenv()
 # --- Supabase Client Initialization ---
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')
